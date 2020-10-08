@@ -4,21 +4,272 @@
     box-sizing: border-box;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1AA8E5;
+    opacity: 1;
+}
+
+.transp-text {
+    color: lightgray;
+}
+
+
 body {
     width: 100vw;
     height: 100vh;
+    position: relative;
 
-    background: url('../static/img/9e0b5a1bf814bf6a4455b7ca0225fbc3d81d7e57.png');
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../static/img/9e0b5a1bf814bf6a4455b7ca0225fbc3d81d7e57.png');
     background-size: cover;
 
     font-family: 'Roboto', sans-serif;
     color: white;
 }
 
+/* Header */
+
+header {
+    z-index: 5;
+
+    width: 100%;
+    height: 100px;
+
+    position: fixed;
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.logo {
+    font-size: 30px;
+    margin: 0px 30px;
+}
+
+.top-nav {
+    position: relative;
+    display: flex;
+}
+
+.nav-item {
+    margin: 0px 30px;
+}
+
+.hamburger {
+    margin: 0px 30px;
+
+    cursor: pointer;
+
+    
+}
+@media only screen and (min-width: 800px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .top-nav {
+        position: absolute;
+        right: -100%;
+        top: 100%;
+
+        height: 80vh;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+    
+        background: rgba(100,100,100,1);
+    
+        border: 3px solid #1AA8E5;
+        border-radius: 5px;
+        
+        font-size: 60px;
+    
+        transition: right 300ms;
+    }
+}
+
+.visible {
+    display: flex;
+    right: 10px;
+   
+}
+
+.hamburger:hover div {
+    background-color: #1AA8E5;
+}
+
 .hamburger-bar {
     width: 35px;
-  height: 5px;
+    height: 5px;
+
   background-color: white;
   margin: 6px 0;
   border-radius: 3px;
+}
+
+/* main */
+main {
+    height: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+    main {
+        flex-wrap: none;
+        flex-direction: column;
+        align-items: space-between;
+        justify-content: center;
+    }
+}
+
+.left-block,
+.form-block {
+    width: 400px;
+    height: 300px;
+}
+
+.left-block h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.left-block p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.form-block {
+    
+    
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-block h2 {
+    letter-spacing: 1px;
+}
+
+.form-container {
+    width: 100%;
+    margin: 30px 0px;
+}
+
+form {
+
+
+    width: 100%;
+    border: 2px solid grey;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.form-item {
+
+
+    width: 100%;
+    height: 60px;
+
+    position: relative;
+
+    background: rgba(100,100,100,.3);
+}
+
+.form-item input {
+    width: 100%;
+    height: 100%;
+
+    padding: 10px;
+
+    color: white;
+    font-size: 20px;
+
+    border: none;
+    border-bottom: 1px solid grey;
+    background: none;
+}
+
+.form-item:nth-child(3) input {
+    border: none;
+}
+
+.form-item label {
+
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    transition: top 50ms;
+}
+
+.form-item input:focus + label {
+    top: 80%;
+    font-size: 12px;
+    transform: none;
+}
+
+.submit-button {
+    width: 100%;
+    border: 2px solid #1AA8E5;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.submit-button input {
+    cursor: pointer;
+
+    background-color: #1AA8E5;
+    border:none;
+}
+
+.form-block p {
+    margin: 10px 0px;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    padding: 15px;
+
+    position: fixed;
+    bottom: 0px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    font-size: 15px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-nav-item {
+    margin: 10px;
+    letter-spacing: 1px;
 }

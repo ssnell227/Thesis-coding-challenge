@@ -12,76 +12,97 @@
 
 <body>
     <header>
-        <div class='logo'>
-
-        </div>
-        <nav class='top-nav'>
-            <div class='nav-item'>
-                About
+        <a href='#'>
+            <div class='logo'>
+                Stamp
             </div>
-            <div class='nav-item'>
-                Integrations
-            </div>
-            <div class='nav-item'>
-                Pricing
-            </div>
-            <div class='nav-item'>
-                Contacts
-            </div>
+        </a>
+        <nav class='top-nav' id='top-nav'>
+            <a href='#'>
+                <div class='nav-item transp-text'>
+                    About
+                </div>
+            </a>
+            <a href='#'>
+                <div class='nav-item transp-text'>
+                    Integrations
+                </div>
+            </a>
+            <a href='#'>
+                <div class='nav-item transp-text'>
+                    Pricing
+                </div>
+            </a>
+            <a href='#'>
+                <div class='nav-item transp-text'>
+                    Contacts
+                </div>
+            </a>
         </nav>
-        <div class='hamburger'>
+        <div class='hamburger' id='hamburger'>
             <div class='hamburger-bar'></div>
             <div class='hamburger-bar'></div>
             <div class='hamburger-bar'></div>
         </div>
     </header>
-    <section class='left-block'>
-        <h1>Simple Way to Organize Your Inspirations</h1>
-        <p>I think what motivates people is not great hate, but great love for other people.</p>
-    </section>
-    <section class='form-block'>
-        <h2>Sign up for free</h2>
-        <form>
-            <div>
-                <label for='name'>Name</label>
-                <input id='name' type='text' name='name' required>
+    <main>
+        <section class='left-block'>
+            <h1>Simple Way to Organize Your Inspirations</h1>
+            <p class='transp-text'>I think what motivates people is not great hate, but great love for other people.</p>
+        </section>
+        <section class='form-block'>
+            <h2>Sign up for free</h2>
+            <div class='form-container'>
+                <form>
+                    <div class='form-item'>
+                        <input id='name' type='text' name='name' required>
+                        <label class='transp-text' for='name'>Name</label>
+                    </div>
+                    <div class='form-item'>
+                        <input id='email' type="text" name='email' required>
+                        <label class='transp-text' for='email'>Email</label>
+                    </div>
+                    <div class='form-item'>
+                        <input id='password' type='password' name='password' required>
+                        <label class='transp-text' for='password'>Password</label>
+                    </div>
+                </form>
+                <div class='form-item submit-button'>
+                    <input type='submit' value='Sign up >'>
+                </div>
             </div>
-            <div>
-                <label for='email'>Email</label>
-                <input id='email' type="text" name='email' required>
-            </div>
-            <div>
-                <label for='password'>Password</label>
-                <input id='password' type='password' name='password' required>
-            </div>
-            <div>
-                <input type='submit' value='Sign up >'>
-            </div>
-            <div class='form-terms'>
-                <p>By clicking 'Sign up' I agree to our</p>
-                <a href='#'><p>Terms of Service</p></a>
-            </div>
-
-        </form>
-    </section>
+            <p class='transp-text'>By clicking 'Sign up' I agree to our</p>
+            <a href='#'>
+                <p>Terms of Service</p>
+            </a>
+        </section>
+    </main>
     <script src='./index.js'></script>
     <footer>
-        <div class='copyright'>
-<p>&copy; 2016 Stamp. All Rights Reserved</p>
+        <div class='copyright transp-text'>
+            <p>&copy; 2016 Stamp. All Rights Reserved</p>
         </div>
         <nav class='footer-nav'>
-            <div class='bottom-nav-item'>
-                Contact
-            </div>
-            <div class='bottom-nav-item'>
-                Help
-            </div>
-            <div class='bottom-nav-item'>
-                Terms of Use
-            </div>
-            <div class='bottom-nav-item'>
-                Privacy Policy
-            </div>
+            <a href='#'>
+                <div class='footer-nav-item'>
+                    Contact
+                </div>
+            </a>
+            <a href='#'>
+                <div class='footer-nav-item'>
+                    Help
+                </div>
+            </a>
+            <a href='#'>
+                <div class='footer-nav-item'>
+                    Terms of Use
+                </div>
+            </a>
+            <a href='#'>
+                <div class='footer-nav-item'>
+                    Privacy Policy
+                </div>
+            </a>
         </nav>
     </footer>
 </body>

@@ -1,0 +1,23 @@
+{
+  "name": "thesis-coding-challenge",
+  "version": "1.0.0",
+  "description": "Coding challenge for Thesis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssnell227/thesis-coding-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ssnell227/thesis-coding-challenge/issues"
+  },
+  "homepage": "https://github.com/ssnell227/thesis-coding-challenge#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}

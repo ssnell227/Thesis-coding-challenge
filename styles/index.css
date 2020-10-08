@@ -222,7 +222,8 @@ form {
     transition: top 50ms;
 }
 
-.form-item input:focus + label {
+.form-item input:focus + label,
+.form-item input:valid + label {
     top: 80%;
     font-size: 12px;
     transform: none;
@@ -272,4 +273,10 @@ footer {
 .footer-nav-item {
     margin: 10px;
     letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 800px) {
+    .footer-nav-item {
+        font-size: 20px;
+    }
 }
